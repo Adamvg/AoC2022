@@ -10,9 +10,7 @@ for ($i = 0; $i -lt $Data.Length; $i++) {
 #pt2
 for ($i = 0; $i -lt $Data.Length; $i++) {
     if(($Data[$i..($i + 13)] | Select-Object -Unique).count -eq 14){
-        Write-Output "Pt1: $($i + 14)" # +14 to include the marker itself
+        Write-Output "Pt2: $($i + 14)" # +14 to include the marker itself
         break
     }
 }
-
-# jqvg
